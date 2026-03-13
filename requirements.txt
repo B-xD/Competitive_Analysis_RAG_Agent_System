@@ -1,0 +1,13 @@
+openai==1.99.9 
+langchain==0.3.27 
+langchain-openai==0.3.30 
+langchain-community==0.3.27 
+langgraph==0.6.4 
+langchain-chroma==0.2.5 
+chromadb==1.0.16 
+langchain-tavily==0.2.11
+python-dotenv
+pydantic 
+fastapi 
+uvicorn 
+

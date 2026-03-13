@@ -1,0 +1,14 @@
+#enviroment 
+.env 
+
+#Chroma DB
+chroma/
+
+#python 
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+#Outputs 
+outputs/*.md
+outputs/*.txt
