@@ -6,8 +6,15 @@ from langchain.agents import tool
 @tool
 def fetch_search_results(question_list: List[str]) -> str:
   """
+      Retrieve answers for competitive analysis questions using the Tavily Search API.
+      Iterates over each question, queries Tavily, and returns question-answer pairs.
 
-  """
+    Args:
+        question_list: A list of competitive analysis questions to search for.
+
+    Returns:
+        A JSON-formatted string containing a list of question-answer dictionaries.
+     """
   #list of questions
   #question_list = json.loads(questions)['questions']
     #create

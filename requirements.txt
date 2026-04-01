@@ -10,4 +10,5 @@ python-dotenv
 pydantic 
 fastapi 
 uvicorn 
+Ipython
 

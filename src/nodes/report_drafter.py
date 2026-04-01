@@ -4,7 +4,7 @@ from ..config import llm
 from ..agents import report_drafter_agent
 from ..tools import generate_report
 from langchain_core.prompts import ChatPromptTemplate
-
+from ..config import tictoc
 
 import json 
 

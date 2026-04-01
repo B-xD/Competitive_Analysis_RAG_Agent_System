@@ -1,6 +1,7 @@
 from langgraph.graph import StateGraph, START, END
 from ..state import CompetitiveAnalysisState
 from ..nodes import run_question_generator, run_data_retrieval_storage,  run_report_drafter
+from ..config import vector_store
 
 # Build the LangGraph workflow
 workflow = StateGraph(CompetitiveAnalysisState)
@@ -16,3 +17,4 @@ workflow.add_edge("report_drafter",         END)
 
 competitive_analysis = workflow.compile()
 print("[GRAPH] Workflow compiled successfully.")
+

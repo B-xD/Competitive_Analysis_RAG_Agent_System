@@ -3,7 +3,7 @@ from ..state import CompetitiveAnalysisState
 from langchain_core.messages import HumanMessage, SystemMessage
 from ..agents import question_generator_agent
 import json 
-
+from ..config import tictoc
 
 def run_question_generator(state: CompetitiveAnalysisState) -> CompetitiveAnalysisState:
     """

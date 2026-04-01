@@ -4,6 +4,7 @@ from langchain_tavily import TavilySearch
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_chroma import Chroma
 import chromadb
+import time 
 
 load_dotenv()
 
@@ -60,3 +61,12 @@ tavily_search = TavilySearch(max_results = 1,
                              include_answer=True)
 
 print('--TAVILYSEARCH INICIALIZED --')
+
+#create a function to check how fast each code runs 
+def tictoc(func):
+    def wrapper():
+        t1 = time.time()
+        func()
+        t2 = time.time()-t1
+        print(f'took {t2} seconds')
+    return wrapper 

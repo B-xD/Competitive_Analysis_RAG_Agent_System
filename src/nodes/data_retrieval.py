@@ -2,6 +2,7 @@ from ..state import CompetitiveAnalysisState
 from langchain_core.messages import HumanMessage, SystemMessage
 from ..agents import data_retrieval_storage_agent 
 import json 
+from ..config import tictoc
 
 # run_data_retrieval_storage node
 def run_data_retrieval_storage(state: CompetitiveAnalysisState) -> CompetitiveAnalysisState:
